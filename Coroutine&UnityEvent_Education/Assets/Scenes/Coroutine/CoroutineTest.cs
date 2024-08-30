@@ -63,4 +63,12 @@ public class CoroutineTest : MonoBehaviour
 
         rigid.AddForce(Vector3.up * 2f, ForceMode.Impulse); // 점프코드
     }
+
+    //코루틴 시간 지연
+    // yield return null; // 한프레임 지연
+    // yield return new WaitForSeconds(); // n초간 시간 지연
+    // yield return new WaitForSecondsRealtime(); // 현실 n초간 시간 지연
+    // yield return new WaitForFixedUpdat(); // FixedUpdate 까지 지연
+    // yield return new WaitForEndOfFrame(); // 프레임 끝까지 지연
+    // yield return new WaitUntil(() => ture); // 조건이 충족할때까지 지연
 }
